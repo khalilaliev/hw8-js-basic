@@ -98,8 +98,8 @@ const arr3 = [12, 10, 8, 8, 3, 3, 3, 3, 2, 4, 10, 12, 10];
 
 const mostOftenNumber = (arr) => {
   return arr.sort((a, b) => {
-    const firstNum = arr.filter((num) => num === a).length;
-    const secondNum = arr.filter((num) => num === b).length;
+    const firstNum = arr.filter((item) => item === a).length;
+    const secondNum = arr.filter((item) => item === b).length;
 
     if (firstNum === secondNum) {
       return b - a;
